@@ -1,0 +1,49 @@
+#program to find even or odd
+num=int(input("Enter a number : "))
+if num%2==0:
+    print("number is even")
+else:
+    print("number is odd")
+#program to check whether num is prime or not
+
+c=0
+for i in range(1,num+1):
+    if num%i==0:
+        c+=1
+    else:
+        continue
+if c==2:
+    print("number is prime")
+else:
+    print("number is not prime")
+
+#program to check whether num is pallindrom or not
+prev_num=num
+rev=0
+while num>0:
+    rem= num%10
+    num//=10
+    rev=rev*10+rem
+if prev_num==rev:
+    print("Number is pallindrome")
+else:
+    print("Number is not pallindrome")
+#program to check whether num is armstrong or not
+ex_num=prev_num
+c1=0
+new_num=0
+while prev_num>0:
+    rem= prev_num%10
+    prev_num//=10
+    c1+=1
+num1=ex_num
+for i in range(c1):
+    rem1=ex_num%10
+    ex_num//=10
+    new_num=new_num+rem1**c1
+if new_num==num1:
+    print("number is armstrong")
+else:
+    print("number is not armstrong")
+
+

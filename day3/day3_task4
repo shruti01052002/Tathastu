@@ -1,0 +1,5 @@
+#duplicate character removing from the string
+li=list(input("Enter a string : "))
+set_list = set(li)
+print("After removing duplicate character from string")
+print("".join(list(set_list)))

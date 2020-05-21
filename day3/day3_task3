@@ -1,0 +1,5 @@
+#duplicate character removing from a list
+li=list(input("Enter the elements of list with space : "))
+set_list = set(li)
+print("After removing duplicate character from list")
+print(list(set_list))

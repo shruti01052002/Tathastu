@@ -1,0 +1,7 @@
+#intersection of two list
+l1 = list(input("Enter list 1 element with space").split())
+l2 = list(input("Enter list 2 element with space").split())
+s1 = set(l1)
+s2 = set(l2)
+s1 = s1.intersection(s2)
+print(list(s1))
