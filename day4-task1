@@ -1,0 +1,5 @@
+#count the occurence of an element in  tuple
+t = tuple(input("Enter the elements of tuple with space : ").split())
+e = input("Enter the element to find it's occurrence : ")
+print("Occurrence of element "+e+" is")
+print(t.count(e))
