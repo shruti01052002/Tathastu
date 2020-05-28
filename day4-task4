@@ -1,0 +1,16 @@
+n = int(input("Enter the no. of elements of dictionary : "))
+li = []
+diction = { }
+diction1 = {}
+for i in range(n):
+    element = int(input("Enter the "+str(i)+" element of dictionary"))
+    diction[i] = element
+    li.append(element)
+print("your input dictionary is")
+print(diction)
+s = set(li)
+li1 = list(s)
+for i in range(len(li1)):
+    diction1[i] = li1[i]
+print("dictionary after removing duplicate element : ")
+print(diction1)
