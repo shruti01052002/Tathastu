@@ -1,0 +1,4 @@
+#sort tuple list by nth element
+t = list(map(int,input("Enter the elements of tuple followed by a space: ").split()))
+t.sort()
+print(tuple(t))
